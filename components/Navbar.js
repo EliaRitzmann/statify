@@ -1,4 +1,5 @@
 import { useSession, signOut, signIn } from "next-auth/react";
+import Link from "next/link";
 import React from "react";
 
 export const Navbar = () => {
@@ -7,7 +8,8 @@ export const Navbar = () => {
   return (
     <div className="w-full bg-black sticky top-0 h-16 flex justify-between items-center p-4 shadow-md">
         {/* Logo*/}
-      <div className="flex items-center gap-2">
+        <Link href="/">
+        <div className="flex items-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-8 w-8 text-sky-400"
@@ -18,6 +20,8 @@ export const Navbar = () => {
         </svg>
         <h1 className="text-white text-2xl t">Statify</h1>
       </div>
+        </Link>
+      
 
         {/* Navigation*/}
       <div>

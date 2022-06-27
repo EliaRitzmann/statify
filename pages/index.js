@@ -1,8 +1,8 @@
 
 import {useSession} from "next-auth/react"
 
-import { LogIn } from '../lib/LogIn';
-import { LoggedIn } from '../lib/Home';
+import { LogIn } from '../components/LogIn';
+import { Home2 } from '../components/Home';
 import { Navbar } from '../components/Navbar';
 
 
@@ -15,7 +15,6 @@ export default function Home() {
   if(!session){
     return (
       <div>
-        <Navbar></Navbar>
         <LogIn></LogIn>
       </div>
       
@@ -24,8 +23,7 @@ export default function Home() {
 
     return (
       <div>
-        <Navbar></Navbar>
-        <LoggedIn></LoggedIn>
+        <Home2></Home2>
       </div>
     )
   }
