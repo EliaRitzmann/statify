@@ -1,4 +1,4 @@
-import {getUsersTopTracks} from '../../../lib/spotify';
+import {getUsersTopArtists} from '../../../lib/spotify';
 import {getSession} from 'next-auth/react';
 
 const handler = async (req, res) => {
@@ -8,7 +8,7 @@ const handler = async (req, res) => {
 
   const {time_range} = req.query;
 
-  const response = await getUsersTopTracks(accessToken, time_range);
+  const response = await getUsersTopArtists(accessToken, time_range);
   const {items} = await response.json();
   return res.status(200).json({items});
 };
