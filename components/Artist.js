@@ -1,11 +1,11 @@
 import React from "react";
 
 export const Artist = (props) => {
-    console.log(props.info)
+    
   return (
     <div>
       <div className="flex items-center w-auto py-1 md:hidden px-2">
-        <h1 className="text-lg font-semibold w-6">{props.index}</h1>
+        <h1 className="text-lg font-semibold w-6">{props.number}</h1>
       <img src={props.info.images[0].url} className="w-20 h-20" alt="" />
       <div className="ml-2 ">
         <h1 className="font-semibold ">{props.info.name}</h1>
