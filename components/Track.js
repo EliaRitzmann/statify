@@ -1,8 +1,15 @@
 import React from "react";
 
 export const Track = (props) => {
+
+  function color(){
+    if(props.textcolor == "white"){
+      return "text-white"
+    }
+  }
+
   return (
-    <div>
+    <div className={color()}>
       <div className="flex items-center w-auto py-1 md:hidden px-2">
         {/*<h1 className="text-lg font-semibold w-6">{props.number}</h1> */}
         

@@ -47,7 +47,7 @@ export const RecentlyPlayed = () => {
       
       console.log(list)
       for (let i = 0; i < list.length; i++) {
-        items.push(<Track info={list[i].track} key={i} number={formatDate(list[i].played_at)}></Track>);
+        items.push(<Track info={list[i].track} key={i} number={formatDate(list[i].played_at)} textcolor="white"></Track>);
       }
     
   return (
