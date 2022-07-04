@@ -1,9 +1,8 @@
 import React from "react";
 
 export const Artist = (props) => {
-    
   return (
-    <div>
+    <a href={props.info.external_urls.spotify} target="_blank">
       <div className="flex items-center w-auto py-1 md:hidden px-2">
         <h1 className="text-lg font-semibold w-6">{props.number}</h1>
       <img src={props.info.images[0].url} className="w-20 h-20" alt="" />
@@ -20,7 +19,7 @@ export const Artist = (props) => {
       </div>
     </div>
     </div>
-    </div>
+    </a>
     
   );
 };
