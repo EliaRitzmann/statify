@@ -2,7 +2,7 @@ import React from "react";
 
 export const Artist = (props) => {
   return (
-    <a href={props.info.external_urls.spotify} target="_blank">
+    <a href={props.info.external_urls.spotify} target="_blank" rel="noreferrer">
       <div className="flex items-center w-auto py-1 md:hidden px-2">
         <h1 className="text-lg font-semibold w-6">{props.number}</h1>
       <img src={props.info.images[0].url} className="w-20 h-20" alt="" />
