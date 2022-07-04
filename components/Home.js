@@ -10,25 +10,38 @@ export const Home2 = () => {
 
   return (
     <div>
-      <div className="bg-[#FF5964] grid grid-cols-2">
-        <div>
-          <h1 className="text-white font-bold text-5xl mt-24 ml-10">
-            Good morning {session.session.user.name}
-          </h1>
-          <Link href="/toptracks">TopTracks</Link>
-          <Link href="/topartists">TopArtists</Link>
-          <Scroll
-            to="recentlyPlayed"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={1000}
-          >
-            Recently Played
-          </Scroll>
+      <div className="bg-[#FF5964] pt-5 pb-2">
+        <h1 className="text-white font-bold text-2xl ml-3 mb-5 md:text-5xl md:p-4">
+          Good morning {session.session.user.name}
+        </h1>
+        <div className="grid grid-cols-2">
+        <div className="flex flex-col justify-center">
+          <div className="m-3 flex flex-col items-center gap-2 md:gap-4">
+            <Link href="/toptracks">
+              <h1 className="text-white hover:font-medium outline outline-2 rounded-md p-1 px-2 md:text-3xl md:p-3 md:px-6">
+                Top Tracks
+              </h1>
+            </Link>
+            <Link href="/topartists">
+              <h1 className="text-white hover:font-medium outline outline-2 rounded-md p-1 px-2 md:text-3xl md:p-3 md:px-6">
+                Top Artists
+              </h1>
+            </Link>
+            <Scroll
+              to="recentlyPlayed"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}
+            >
+              <h1 className="text-white hover:font-medium outline outline-2 rounded-md p-1 px-2 md:text-3xl md:p-3 md:px-6">
+                Recently Played
+              </h1>
+            </Scroll>
+          </div>
         </div>
 
-        <div className="flex justify-center p-24">
+        <div className="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0"
@@ -37,11 +50,13 @@ export const Home2 = () => {
             version="1.1"
             viewBox="0 0 32 32"
             xmlSpace="preserve"
-            className="fill-white w-full"
+            className="fill-white w-2/3"
           >
             <path d="M4 13c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1s1-.4 1-1v-4c0-.6-.4-1-1-1zM8 11c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1s1-.4 1-1v-8c0-.6-.4-1-1-1zM12 6c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1s1-.4 1-1V7c0-.6-.4-1-1-1zM16 13c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1s1-.4 1-1v-4c0-.6-.4-1-1-1zM20 9c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1s1-.4 1-1V10c0-.6-.4-1-1-1zM24 6c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1s1-.4 1-1V7c0-.6-.4-1-1-1zM28 13c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1s1-.4 1-1v-4c0-.6-.4-1-1-1z"></path>
           </svg>
         </div>
+        </div>
+        
       </div>
 
       <svg
@@ -73,9 +88,18 @@ export const Home2 = () => {
         ></path>
       </svg>
 
-      <div className="bg-[#38618C] flex flex-col items-center" name="recentlyPlayed" >
-        <h1 className="text-white text-4xl font-semibold  mb-10">Recently Played</h1>
-        {session ? <RecentlyPlayed></RecentlyPlayed> : <h1>log in to see stuff</h1>}
+      <div
+        className="bg-[#38618C] flex flex-col items-center"
+        name="recentlyPlayed"
+      >
+        <h1 className="text-white text-4xl font-semibold  mb-10">
+          Recently Played
+        </h1>
+        {session ? (
+          <RecentlyPlayed></RecentlyPlayed>
+        ) : (
+          <h1>log in to see stuff</h1>
+        )}
       </div>
       {/* 
        <div className="bg-[#1DB954] h-screen">
@@ -84,7 +108,6 @@ export const Home2 = () => {
       <div className="bg-[#35A7FF] h-screen"></div> 
       
       */}
-     
     </div>
   );
 };

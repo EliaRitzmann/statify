@@ -4,11 +4,13 @@ export const Track = (props) => {
   return (
     <div>
       <div className="flex items-center w-auto py-1 md:hidden px-2">
-        <h1 className="text-lg font-semibold w-6">{props.number}</h1>
-      <img src={props.info.album.images[0].url} className="w-20 h-20" alt="" />
+        {/*<h1 className="text-lg font-semibold w-6">{props.number}</h1> */}
+        
+      <img src={props.info.album.images[0].url} className="w-24 h-24" alt="" />
       <div className="ml-2 ">
         <h1 className="font-semibold ">{props.info.name}</h1>
         <h1 className="">{props.info.artists[0].name}</h1>
+        <h1 className="text-sm font-normal">{props.number}</h1>
       </div>
     </div>
     <div className="hidden md:block">
@@ -21,7 +23,6 @@ export const Track = (props) => {
       </div>
     </div>
     </div>
-    
     </div>
     
   );
