@@ -13,7 +13,7 @@ export default function TopArtists() {
 
   useEffect(() => {
     const getMyPlaylists = async () => {
-      const res = await fetch("https://statify.elia-ritzmann.ch//api/spotify/topartists?time_range=" + time_range);
+      const res = await fetch("/api/spotify/topartists?time_range=" + time_range);
       const { items } = await res.json();
       setList(items);
     };
