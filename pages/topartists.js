@@ -33,7 +33,7 @@ export default function TopArtists() {
   var items = [];
 
   for (let i = 0; i < list.length; i++) {
-    items.push(<Artist info={list[i]} key={i} number={i + 1}></Artist>);
+    items.push(<Artist info={list[i]} key={i} number={i + 1 + "#"}></Artist>);
   }
 
   function handleDropdown(){

@@ -13,8 +13,9 @@ export const Track = (props) => {
     </div>
     <div className="hidden md:block">
     <div className="flex flex-col items-center w-64">
+      <h1 className="text-2xl mb-1">{props.number}</h1>
       <img src={props.info.album.images[0].url} className="w-64 h-64" alt="" />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-1">
         <h1 className="font-semibold text-xl text-center">{props.info.name}</h1>
         <h1 className="md:text-lg text-center">{props.info.artists[0].name}</h1>
       </div>

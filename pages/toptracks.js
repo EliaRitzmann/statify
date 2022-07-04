@@ -33,7 +33,7 @@ export default function TopTracks() {
   var items = [];
 
   for (let i = 0; i < list.length; i++) {
-    items.push(<Track info={list[i]} key={i} number={i + 1}></Track>);
+    items.push(<Track info={list[i]} key={i} number={i + 1 + "#"}></Track>);
   }
 
   function handleDropdown() {

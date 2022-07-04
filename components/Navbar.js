@@ -24,8 +24,10 @@ export const Navbar = () => {
       
 
         {/* Navigation*/}
-      <div>
-
+      <div className="flex gap-10 hidden">
+        <Link href="/toptracks"><h1 className="text-white hover:text-sky-500 font-medium">Top Tracks</h1></Link>
+        <Link href="/topartists"><h1 className="text-white hover:text-sky-500 font-medium">Top Artists</h1></Link>
+        <Link href="/toptracks"><h1 className="text-white hover:text-sky-500 font-medium">Top Tracks</h1></Link>
       </div>
 
         {/* profile*/}
