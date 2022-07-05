@@ -3,15 +3,15 @@ import { useSession, signIn, signOut } from "next-auth/react";
 export const LogIn = () => {
   return (
     <div>
-      <section class="h-full gradient-form bg-gray-200 md:h-screen">
-        <div class="container py-12 px-6 h-full">
-          <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
-            <div class="xl:w-10/12">
-              <div class="block bg-white shadow-lg rounded-lg">
-                <div class="lg:flex lg:flex-wrap g-0">
-                  <div class="lg:w-6/12 px-4 md:px-0">
-                    <div class="md:p-12 md:mx-6">
-                      <div class="flex justify-center flex-col items-center">
+      <section className="h-full gradient-form bg-gray-200 md:h-screen">
+        <div className="container py-12 px-6 h-full">
+          <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+            <div className="xl:w-10/12">
+              <div className="block bg-white shadow-lg rounded-lg">
+                <div className="lg:flex lg:flex-wrap g-0">
+                  <div className="lg:w-6/12 px-4 md:px-0">
+                    <div className="md:p-12 md:mx-6">
+                      <div className="flex justify-center flex-col items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-24 w-24 text-sky-500"
@@ -20,13 +20,13 @@ export const LogIn = () => {
                         >
                           <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
                         </svg>
-                        <h4 class="text-xl font-semibold mt-1 mb-12 pb-1">
+                        <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">
                           Log in to use Statify
                         </h4>
                       </div>
-                      <p class="mb-4">Please contact elia.ritzmann@stud.altekanti.ch to ask for permision to use this app.</p>
+                      <p className="mb-4">Please contact elia.ritzmann@stud.altekanti.ch to ask for permision to use this app.</p>
                       <button
-                            class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md bg-green-500 hover:bg-green-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                            className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md bg-green-500 hover:bg-green-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
@@ -37,8 +37,8 @@ export const LogIn = () => {
                       
                     </div>
                   </div>
-                  <div class="lg:w-6/12 flex items-center justify-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-tr from-green-500 to-sky-500">
-                    <div class="text-white px-4 py-6 md:p-12 md:mx-6">
+                  <div className="lg:w-6/12 flex items-center justify-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-tr from-green-500 to-sky-500">
+                    <div className="text-white px-4 py-6 md:p-12 md:mx-6">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0"
