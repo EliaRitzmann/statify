@@ -30,7 +30,7 @@ export const LogIn = () => {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            onCLick={() => signIn("spotify")}
+                            onClick={() => signIn("spotify")}
                           >
                             Log in with Spotify
                           </button>
