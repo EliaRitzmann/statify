@@ -2,8 +2,8 @@ import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 export const LogIn = () => {
   return (
-    <div>
-      <section className="h-full gradient-form bg-gray-200 md:h-screen">
+    <div className="flex justify-center bg-gray-200">
+      <section className="h-full gradient-form  md:h-screen">
         <div className="container py-12 px-6 h-full">
           <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
             <div className="xl:w-10/12">
