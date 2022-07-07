@@ -24,7 +24,7 @@ export const LogIn = () => {
                           Log in to use Statify
                         </h4>
                       </div>
-                      <p className="mb-4">Please contact elia.ritzmann@stud.altekanti.ch to ask for permision to use this app.</p>
+                      <p className="mb-4">Please contact elia.ritzmann@stud.altekanti.ch to ask for permission to use this app.</p>
                       <button
                             className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md bg-green-500 hover:bg-green-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
                             type="button"
